@@ -12,8 +12,8 @@ import org.apache.logging.log4j.Logger;
 )
 public class SampleMod112 {
 	public static final String MODID = "samplemod112";
-	public static final String NAME = "Sample Mod 1.12";
-	public static final String VERSION = "1.0";
+	public static final String NAME = "Tasty Furniture";
+	public static final String VERSION = "0.1";
 	
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
@@ -22,3 +22,7 @@ public class SampleMod112 {
 		LOGGER.info("Hello, world!");
 	}
 }
+
+//changing the MODID causes minecraft to not recognize this as a mod
+//changing the name is fine
+//changing the version is also fine
