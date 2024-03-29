@@ -17,6 +17,13 @@ public class TastyFurniture {
 	
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 	
+	public void onEnable() {
+
+	}
+
+	public void onDisable() {
+		
+	}
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent preinit) {
 		LOGGER.info("Hello, world!");
