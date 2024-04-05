@@ -1,9 +1,11 @@
 package com.goldfish;
 
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 
 @Mod(
 	modid = TastyFurniture.MODID,
@@ -28,4 +30,11 @@ public class TastyFurniture {
 	public void preinit(FMLPreInitializationEvent preinit) {
 		LOGGER.info("Hello, world!");
 	}
+
+	//@SidedProxy(serverSide = "com.goldfish.TastyFurniture.proxy.CommonProxy", clientSide = "com.goldfish.TastyFurniture.proxy.ClientProxy")
+   // public static CommonProxy proxy;
+
+	
 }
+
+

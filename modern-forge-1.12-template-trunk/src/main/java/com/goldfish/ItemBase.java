@@ -21,7 +21,7 @@ public class ItemBase extends Item {
        } 
 
        public void registerItemModel() {
-              TastyFurniture.proxy.registerItemRenderer(this, 0, name);
+            //  TastyFurniture.proxy.registerItemRenderer(this, 0, name);
        }
 
        @Override
