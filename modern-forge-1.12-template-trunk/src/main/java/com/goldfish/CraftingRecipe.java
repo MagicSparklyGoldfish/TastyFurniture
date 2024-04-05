@@ -4,7 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import com.goldfish.TastyFurniture;
-import com.goldfish.FruitIngots;
+import com.goldfish.ItemBase;
 
 public class CraftingRecipe {
     
