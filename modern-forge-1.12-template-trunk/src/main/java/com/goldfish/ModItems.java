@@ -14,9 +14,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ModItems {
+// Tab
+   static final CreativeTabs tabTastyFurniture = (new CreativeTabs("tabTastyFurniture") {
+	@Override
+	public ItemStack getTabIconItem() {
+		return new ItemStack(ingotApple);
+	}
+   });
 
 // Ingots
-   public static ItemBase ingotApple = new ItemBase("ingot_apple");//.setCreativeTab(CreativeTabs.MATERIALS);
+   public static ItemBase ingotApple = new ItemBase("ingot_apple").setCreativeTab(CreativeTabs.tabTastyFurniture);
 
    public static void register(IForgeRegistry<Item> registry) {
 	registry.registerAll(
