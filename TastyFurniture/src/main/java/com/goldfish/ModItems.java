@@ -29,7 +29,7 @@ public static final CreativeTabs tabTastyFurniture = new CreativeTabs("tabTastyF
 };
 
 // Ingots
-   public static ItemBase ingotApple = new ItemBase("ingot_apple");//.setCreativeTab(tabTastyFurniture);
+   public static ItemBase ingotApple = new ItemBase("ingot_apple").setCreativeTab(tabTastyFurniture);
 
    public static void register(IForgeRegistry<Item> registry) {
 	registry.registerAll(
