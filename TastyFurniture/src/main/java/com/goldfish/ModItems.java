@@ -16,20 +16,20 @@ import org.apache.logging.log4j.Logger;
 
 public class ModItems {
 // Tab
-   static final CreativeTabs tabTastyFurniture = (new CreativeTabs("tabTastyFurniture") {
-	//  @Override
-	//  public ItemStack getTabIconItem() {
-	//  	return new ItemStack(ingotApple);
-	//  }
+public static final CreativeTabs tabTastyFurniture = new CreativeTabs("tabTastyFurniture") {
+	//@Override
+	public ItemStack getTabIconItem() {
+		return new ItemStack(ingotApple); // Return the item you want as the icon
+	}
 
 	@Override
 	public ItemStack createIcon() {
-		throw new UnsupportedOperationException("Unimplemented method 'createIcon'");
+		return getTabIconItem(); // You can simply call getTabIconItem() here
 	}
-   });
+};
 
 // Ingots
-   public static ItemBase ingotApple = new ItemBase("ingot_apple").setCreativeTab(tabTastyFurniture);
+   public static ItemBase ingotApple = new ItemBase("ingot_apple");//.setCreativeTab(tabTastyFurniture);
 
    public static void register(IForgeRegistry<Item> registry) {
 	registry.registerAll(
