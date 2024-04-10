@@ -3,6 +3,7 @@ package com.goldfish;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,14 +17,19 @@ import org.apache.logging.log4j.Logger;
 public class ModItems {
 // Tab
    static final CreativeTabs tabTastyFurniture = (new CreativeTabs("tabTastyFurniture") {
+	//  @Override
+	//  public ItemStack getTabIconItem() {
+	//  	return new ItemStack(ingotApple);
+	//  }
+
 	@Override
-	public ItemStack getTabIconItem() {
-		return new ItemStack(ingotApple);
+	public ItemStack createIcon() {
+		throw new UnsupportedOperationException("Unimplemented method 'createIcon'");
 	}
    });
 
 // Ingots
-   public static ItemBase ingotApple = new ItemBase("ingot_apple").setCreativeTab(CreativeTabs.tabTastyFurniture);
+   public static ItemBase ingotApple = new ItemBase("ingot_apple").setCreativeTab(tabTastyFurniture);
 
    public static void register(IForgeRegistry<Item> registry) {
 	registry.registerAll(
