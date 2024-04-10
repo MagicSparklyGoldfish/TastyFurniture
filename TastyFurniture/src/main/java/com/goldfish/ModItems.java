@@ -19,12 +19,12 @@ public class ModItems {
 public static final CreativeTabs tabTastyFurniture = new CreativeTabs("tabTastyFurniture") {
 	//@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ingotApple); // Return the item you want as the icon
+		return new ItemStack(ingotApple); 
 	}
 
 	@Override
 	public ItemStack createIcon() {
-		return getTabIconItem(); // You can simply call getTabIconItem() here
+		return getTabIconItem(); 
 	}
 };
 
