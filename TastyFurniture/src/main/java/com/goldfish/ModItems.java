@@ -15,21 +15,21 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ModItems {
-// Tab
-public static final CreativeTabs tabTastyFurniture = new CreativeTabs("tabTastyFurniture") {
-	//@Override
-	public ItemStack getTabIconItem() {
-		return new ItemStack(ingotApple); 
-	}
+ //Tab
+ public static final CreativeTabs tabTastyFurniture = new CreativeTabs("tabTastyFurniture") {
+ 	//@Override
+ 	public ItemStack getTabIconItem() {
+ 		return new ItemStack(ingotApple); 
+ 	}
 
 	@Override
 	public ItemStack createIcon() {
-		return getTabIconItem(); 
+ 		return getTabIconItem(); 
 	}
-};
+ };
 
 // Ingots
-   public static ItemBase ingotApple = new ItemBase("ingot_apple").setCreativeTab(tabTastyFurniture);
+   public static ItemBase ingotApple = new ItemBase("Apple Ingot").setCreativeTab(tabTastyFurniture).setUnlocalizedName(TastyFurniture.MODID + ".Apple Ingot"); 
 
    public static void register(IForgeRegistry<Item> registry) {
 	registry.registerAll(
