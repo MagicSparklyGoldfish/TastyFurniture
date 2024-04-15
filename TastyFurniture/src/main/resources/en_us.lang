@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 item.goldfish:ingotApple.name=Apple Ingot
+=======
+item.ingotApple:IngotApple.name=Apple Ingot
+>>>>>>> 461c358d366e377ea291dcce0e77c60e9461b2bc
