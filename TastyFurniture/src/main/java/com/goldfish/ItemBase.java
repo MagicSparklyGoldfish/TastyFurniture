@@ -15,13 +15,8 @@ public class ItemBase extends Item {
 
        public ItemBase(String name) {
               this.name = name;
-              // setUnlocalizedName(name);
+              //this.setTranslationKey(this.getRegistryName().toString());
               setRegistryName(name);
-       //name
-        //setRegistryName("Apple Ingot"); 
-        //setUnlocalizedName(TastyFurniture.MODID + ".Apple Ingot"); 
-        //FruitIngots appleIngot = new FruitIngots();
-        //Item Apple_Ingot = new Item(FruitIngots.Item.appleIngot); 
        } 
 
        public void registerItemModel() {
